@@ -8,12 +8,12 @@ public class PlataformCreator : MonoBehaviour
     [SerializeField]
     private GameObject coins;
     [SerializeField]
-    private float heighXZ;
+    private static float heighXZ;
     [SerializeField]
     private Vector3 lastPos;
 
-    private int limiteOfLevel = 100;
-    private int countOfPlataformsAlreadyCreated = 0;
+    private int limiteOfPlataforms = 20;
+    public static int countOfPlataformsAlreadyCreated = 0;
 
 
     void Start()
@@ -23,6 +23,8 @@ public class PlataformCreator : MonoBehaviour
 
         for (int i = 0; i < 10; i++)
             createGround();
+
+        countOfPlataformsAlreadyCreated = 10;
 
         StartCoroutine(createGroundProcedural());
     }
@@ -57,6 +59,9 @@ public class PlataformCreator : MonoBehaviour
     {
         int tmp = Random.Range(0, 10);
 
+        countOfPlataformsAlreadyCreated++;
+        //Debug.Log("-> " + countOfPlataformsAlreadyCreated);
+
         if (tmp < 5)
             createX();
         else
@@ -79,10 +84,14 @@ public class PlataformCreator : MonoBehaviour
         {
             yield return new WaitForSeconds(0.4f);
 
-            if (countOfPlataformsAlreadyCreated >= limiteOfLevel)
-                createGround();
-            else
-                BallController.GameOver = true;
+            //if (countOfPlataformsAlreadyCreated <= limiteOfPlataforms)
+            //{
+            createGround();
+            //}
+            //else
+            //{
+            //Debug.Log("End of Level");
+            //}
         }
     }
 

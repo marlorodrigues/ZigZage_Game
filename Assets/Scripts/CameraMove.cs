@@ -14,7 +14,6 @@ public class CameraMove : MonoBehaviour
     void Start()
     {
         distance = ball.position - transform.position;
-
     }
 
     private void LateUpdate()
@@ -31,6 +30,5 @@ public class CameraMove : MonoBehaviour
         targetPosition = ball.position - distance;
         pos = Vector3.Lerp(pos, targetPosition, lerpValue);
         transform.position = pos;
-
     }
 }

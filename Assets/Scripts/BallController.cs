@@ -18,8 +18,6 @@ public class BallController : MonoBehaviour
     public Text plataformText;
 
 
-
-
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
@@ -41,9 +39,6 @@ public class BallController : MonoBehaviour
             rigidbody.useGravity = true;
         }
 
-
-        //if (GameOver)
-        //Debug.Log("Caindoooooo");
 
         speedText.text = "Speed: " + speed.ToString();
         scoreText.text = "Score: " + coinsCounter.ToString();
