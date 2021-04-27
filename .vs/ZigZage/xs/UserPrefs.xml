@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{994D5F31-161C-68E7-1551-40AE4FDAE42A}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlataformCreator.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/pauseGame.cs">
     <Files>
       <File FileName="Assets/Scripts/TriggerPlataform.cs" Line="20" Column="36" IsPinned="True" />
-      <File FileName="Assets/Scripts/PlataformCreator.cs" Line="85" Column="48" />
-      <File FileName="Assets/Scripts/BallController.cs" Line="19" Column="1" />
-      <File FileName="Assets/Scripts/CameraMove.cs" Line="16" Column="55" />
+      <File FileName="Assets/Scripts/PlataformCreator.cs" Line="62" Column="43" />
+      <File FileName="Assets/Scripts/BallController.cs" Line="23" Column="42" />
+      <File FileName="Assets/Scripts/pauseGame.cs" Line="1" Column="7" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,7 +12,7 @@
           <Node name="ZigZage" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="PlataformCreator.cs" selected="True" />
+                <Node name="pauseGame.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -22,7 +22,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a6159afe-8cbc-48a8-b11b-d575755c7cf3" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ed7c70df-a72e-4a84-8b30-31bd0f8b2802" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

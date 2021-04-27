@@ -13,9 +13,9 @@ public class BallController : MonoBehaviour
     private int coinsCounter = 0;
     public static int plataformsCount = 0;
 
-    public Text speedText;
+    //public Text speedText;
     public Text scoreText;
-    public Text plataformText;
+    //public Text plataformText;
 
 
     void Start()
@@ -29,7 +29,7 @@ public class BallController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && !GameOver)
             BallMove();
 
 
@@ -39,14 +39,12 @@ public class BallController : MonoBehaviour
             rigidbody.useGravity = true;
         }
 
-
-        speedText.text = "Speed: " + speed.ToString();
-        scoreText.text = "Score: " + coinsCounter.ToString();
-        plataformText.text = "Pass: " + plataformsCount.ToString();
+        //speedText.text = "Speed: " + speed.ToString();
+        scoreText.text = coinsCounter.ToString();
+        //plataformText.text = "Pass: " + plataformsCount.ToString();
 
 
         Debug.DrawRay(transform.position, Vector3.down, Color.yellow);
-
     }
 
     void BallMove()

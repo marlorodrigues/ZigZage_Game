@@ -18,7 +18,7 @@ public class TriggerPlataform : MonoBehaviour
             BallController.plataformsCount++;
             rb.useGravity = true;
             rb.isKinematic = false;
-            //Destroy(gameObject, 5f);
+            Destroy(gameObject, 0.5f);
             //PlataformCreator.countOfPlataformsAlreadyCreated--;
 
             //Debug.Log("-> " + PlataformCreator.countOfPlataformsAlreadyCreated);

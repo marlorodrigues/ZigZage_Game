@@ -63,9 +63,9 @@ public class PlataformCreator : MonoBehaviour
         //Debug.Log("-> " + countOfPlataformsAlreadyCreated);
 
         if (tmp < 5)
-            createX();
-        else
             createZ();
+        else
+            createX();
 
     }
 
