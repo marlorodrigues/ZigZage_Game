@@ -16,12 +16,10 @@ public class TriggerPlataform : MonoBehaviour
         if (collider.gameObject.CompareTag("Player"))
         {
             BallController.plataformsCount++;
+            PlataformCreator.countOfPlataformsAlreadyCreated--;
             rb.useGravity = true;
             rb.isKinematic = false;
             Destroy(gameObject, 0.5f);
-            //PlataformCreator.countOfPlataformsAlreadyCreated--;
-
-            //Debug.Log("-> " + PlataformCreator.countOfPlataformsAlreadyCreated);
         }
     }
 }

@@ -60,7 +60,6 @@ public class PlataformCreator : MonoBehaviour
         int tmp = Random.Range(0, 10);
 
         countOfPlataformsAlreadyCreated++;
-        //Debug.Log("-> " + countOfPlataformsAlreadyCreated);
 
         if (tmp < 5)
             createZ();
@@ -84,14 +83,8 @@ public class PlataformCreator : MonoBehaviour
         {
             yield return new WaitForSeconds(0.4f);
 
-            //if (countOfPlataformsAlreadyCreated <= limiteOfPlataforms)
-            //{
-            createGround();
-            //}
-            //else
-            //{
-            //Debug.Log("End of Level");
-            //}
+            if (countOfPlataformsAlreadyCreated < limiteOfPlataforms)
+                createGround();
         }
     }
 
